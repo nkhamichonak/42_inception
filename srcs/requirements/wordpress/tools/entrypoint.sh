@@ -42,4 +42,4 @@ if [ ! -f "$WP_PATH/.wp_initialized" ]; then
 	su-exec wp_user touch "$WP_PATH/.wp_initialized"
 fi
 
-exec su-exec wp_user php-fpm83 -F
+exec php-fpm83 -F
