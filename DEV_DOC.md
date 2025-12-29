@@ -6,7 +6,14 @@ This document explains how to set up, build, run, and maintain this Inception pr
 
 ## 1. Prerequisites
 
-You need the following installed on your system:
+⚠️ **This project must be run inside a Virtual Machine**, as required by the subject.
+
+Running Inception directly on school computers is unreliable due to restricted
+filesystem permissions, which can prevent Docker bind mounts (used by MariaDB
+and WordPress) from working correctly. A VM ensures full control over ownership
+and permissions and guarantees reproducible behaviour.
+
+You need the following installed **inside the VM**:
 
 * **Docker** (engine + CLI)
 * **Docker Compose v2** (available via `docker compose`)
